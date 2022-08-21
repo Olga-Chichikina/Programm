@@ -3,7 +3,7 @@
 //Console.SetCursorPosition ( 10, 4 );
 //Console.WriteLine(" + ");
 
-int xa=10, ya=1, xb=1, yb=20, xc=40, yc=15;
+int xa=1, ya=1, xb=25, yb=15, xc=50, yc=1;
 Console.SetCursorPosition (xa,ya);
 Console.WriteLine(" + ");
 Console.SetCursorPosition(xb,yb);
@@ -12,7 +12,7 @@ Console.SetCursorPosition (xc,yc);
 Console.WriteLine(" + ");
 // определяем случайную точку
 
-int x = xa , y = ya;
+/*int x = xa , y = ya;
 
 int count = 0;
 
@@ -38,3 +38,4 @@ while (count < 10 )
     Console.WriteLine(" + ");
     count=count+1; // можно записать count++;  
 } 
+*/
