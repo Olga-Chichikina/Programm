@@ -1,7 +1,7 @@
 ﻿
 
 // Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
-/* 1 вариант
+// 1 вариант
 
 Console.Write("Введите первое число:  ");
 int number1=Convert.ToInt32(Console.ReadLine());
@@ -23,8 +23,8 @@ if  ( number1 > number2 )
         Console.WriteLine("Второе число  " + number2 + " больше первого " + number1 );
     }
 }
-*/
-/* 2 вариант - с помощью метода
+
+// 2 вариант - с помощью метода
 
 void Metod(int arg1, int arg2)
 {
@@ -50,11 +50,11 @@ int number1=Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число: ");
 int number2=Convert.ToInt32(Console.ReadLine());
 Metod (number1, number2 );
-*/
+
 
 
 //Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел
-/*
+
 int Metod(int arg1, int arg2, int arg3) 
 {
 int result=arg1;
@@ -71,9 +71,8 @@ Console.Write("Введите третье число:  ");
 int number3=Convert.ToInt32(Console.ReadLine());
 int max=Metod (number1, number2, number3) ;
 Console.WriteLine("Максимальное число :  " + max);
-*/
 
-/*
+
 //Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли 
 //число чётным (делится ли оно на два без остатка).
 
@@ -92,7 +91,7 @@ else
 Console.Write("Введите число:  ");
 int number=Convert.ToInt32(Console.ReadLine());
 Metod(number);
-*/
+
 
 //Задача 8: Напишите программу, которая на вход принимает число (N), 
 //а на выходе показывает все чётные числа от 1 до N.
