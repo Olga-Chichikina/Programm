@@ -25,36 +25,37 @@ Console.Write(st);
 
 
 //Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
-
-int FindSumCifr ( int[] number , int cifr)  //  количество цифр в числе
-{
-    int sum =0;
-    int i=0;
-        while ( i <= number.Length)
-         {
-            sum=sum+number[i]; 
-            i++;
-         }
-     return sum;
-}
+/*
 
 Console.Write(" Введите число : ");
-int[] num=Console.ReadLine();
-int summa=FindSumCifr (num);
+int num= Convert.ToInt32(Console.ReadLine());
+ 
+int summa=0;
+    while( num !=0 )
+    {   
+    summa=summa+num%10;
+    num= num/10;
+    }   
+
 Console.WriteLine("сумма цифр числа равна  " + summa);
+*/
+
+
+//Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 
 
 /*
-
-452 -> 11
-
-82 -> 10
-
-9012 -> 12
-
-Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
-
-1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
-
-6, 1, 33 -> [6, 1, 33]
+Console.Write ("Введите количество элементов массива :");
+int elementCount=Convert.ToInt32(Console.ReadLine());
+int[] myArray= new int[elementCount];
+    for( int i=0 ; i < myArray.Length ; i++)
+    {
+    Console.Write($"Введите  элемент массива с индексом {i}  ")  ;
+    myArray[i]=Convert.ToInt32(Console.ReadLine());
+    }
+    Console.WriteLine("Ввывод массива на экран");
+    for( int i=0 ; i< myArray.Length; i++)
+    {
+        Console.Write(myArray[i]+" , " );
+    }
 */
