@@ -15,9 +15,12 @@ double[,] NewArrayD()   // создание массива , заполненн�
             for( int i=0 ; i< row ; i++ )
                 {
                     for(int j=0; j< colomn ; j++ ) 
+                    {
                     massivD[i,j]= new Random().NextDouble()*10;
-                   
+                    massivD[i,j]=Math.Round(massivD[i,j],1);
+                    } 
                 }
+
             return massivD;
     } 
 
