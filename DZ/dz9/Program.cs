@@ -1,4 +1,21 @@
-﻿
+﻿//Задача 64: Задайте значение N. Напишите программу, которая выведет все натуральные числа в 
+
+System.Console.WriteLine("Введите число N: ");
+int N = Convert.ToInt32(Console.ReadLine());
+
+string Recursiya(int start, int end)
+{
+    if (start == end) return start.ToString();
+    if (start > end)
+    {
+        return (start + " "+ Recursiya(start - 1, end));
+    }
+ return (start + " "+ Recursiya(start + 1, end));
+
+}
+
+System.Console.WriteLine(Recursiya(N, 1));
+
 
 // Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
 
@@ -21,7 +38,6 @@ void NumberSum (int numberM, int numberN, int sum)
 }
 
 NumberSum(numberM, numberN, 0);
-*/
 
 // Задача 68: Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
 
